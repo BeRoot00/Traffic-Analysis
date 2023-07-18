@@ -49,4 +49,4 @@ def dect_DOS(pcap):
 
             # Print a message indicating a potential DoS attack from the source to the destination
             print(
-                "[+] the host" + source + "attacked the host" + destination + "by sending him " + packet_sent + " packets")
+                "[+] the host" + source + "attacked the web server" + destination + "by sending him " + packet_sent + " packets")
