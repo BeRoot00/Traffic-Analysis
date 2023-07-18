@@ -34,7 +34,7 @@ This Python script aims to detect potential Denial of Service (DoS) attacks in a
 3. Run the script using Python:
 
 ```
-python3 detect_dos.py
+python3 DOS_detection.py
 ```
 
 #### Configuration
