@@ -50,3 +50,9 @@ def dect_DOS(pcap):
             # Print a message indicating a potential DoS attack from the source to the destination
             print(
                 "[+] the host" + source + "attacked the web server" + destination + "by sending him " + packet_sent + " packets")
+
+# Sample usage:
+if __name__ == "__main__":
+    with open("your_pcap_file.pcap", "rb") as pcap_file:
+        pcap = dpkt.pcap.Reader(pcap_file)
+        detect_DOS(pcap)
