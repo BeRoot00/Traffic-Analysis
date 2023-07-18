@@ -1,5 +1,5 @@
 # Traffic Analysis Scripts
-This repository contains a collection of scripts that I have created for various Forensic projects . Each script is designed to perform a specific task and can be used independently or integrated into other projects.
+This repository contains a collection of scripts that I have created for various traffic analysis projects . Each script is designed to perform a specific task and can be used independently or integrated into other projects.
 
 ## snort_monitor.py
 
