@@ -92,6 +92,22 @@ If the number of packets sent by any connection exceeds the defined `max_packets
 
 Note: The script assumes that the pcap file contains Ethernet, IP, and TCP data for each packet. Ensure that your pcap file conforms to this format for accurate results.
 
+#### output example
+
+Suppose the pcap file contains the following network traffic data:
+
+    Source IP: 192.168.0.100, Destination IP: 192.168.0.1, Destination Port: 80, Number of Packets: 4500
+    Source IP: 192.168.0.101, Destination IP: 192.168.0.1, Destination Port: 80, Number of Packets: 5001
+    Source IP: 192.168.0.102, Destination IP: 192.168.0.1, Destination Port: 80, Number of Packets: 2000
+    Source IP: 192.168.0.103, Destination IP: 192.168.0.1, Destination Port: 80, Number of Packets: 5500
+
+Running the corrected code on this pcap file would produce the following output:
+
+```bash
+[+] The host 192.168.0.101 attacked the web server 192.168.0.1 by sending 5001 packets 
+[+] The host 192.168.0.103 attacked the web server 192.168.0.1 by sending 5500 packets
+```
+
 #### Troubleshooting
 
 If you encounter any issues or have questions, feel free to open an issue on the GitHub repository or seek help from the Python community.
